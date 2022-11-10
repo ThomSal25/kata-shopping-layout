@@ -1,0 +1,139 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html {
+    font-family: Quicksand;
+}
+
+body {
+    max-width: 190ch;
+    margin: 0 auto;
+    background-color: rgb(178, 199, 218);
+}
+
+main {
+    /* border: 5px dashed red; */
+    display: flex;
+    margin: 5rem;
+}
+
+.hint {
+    position: fixed;
+    background-color: white;
+    padding: .5rem;
+    border-radius: .5rem;
+
+    top: 1rem;
+}
+
+.article {
+    _border: 5px dashed blue;
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: white;
+    overflow: hidden;
+}
+
+img {
+    max-width: 27rem;
+}
+
+.description {
+    margin: 1rem;
+}
+
+.order{
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(178, 199, 218);
+    display: inline-block;
+}
+
+.prize {
+    background-color: white;
+    margin: .5rem;
+    padding: .75rem;
+
+    text-align: center;
+}
+
+.size-quan {
+    _border: 5px dashed green;
+    display: flex;
+    justify-content: space-between;
+}
+
+select {
+    width: 3.5rem;
+    height: 1.5rem;
+    margin: auto 0;
+}
+
+button {
+    background-color: blue;
+    color: white;
+    width: 20rem;
+    border-radius: .5rem;
+    margin: .5rem;
+    
+    
+    text-align: center;
+    padding: 1rem;
+}
+
+.color {
+    display: flex;
+    align-items: center;
+}
+
+.c-padd {
+    margin: .25rem;    
+}
+
+.radius {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#d1 {    
+    background-color: blue;
+    border-radius: 50%;
+}
+
+#d2 {
+    background-color: red;
+    border-radius: 50%;
+}
+
+#d3 {
+    background-color: black;
+    border-radius: 50%;
+}
+
+#d4 {
+    background-image: linear-gradient(to right, green 50%, black 50%);
+    border-radius: 50%;
+}
+
+#d5 {
+    background-image: linear-gradient(to right, blue 50%, black 50%);
+    border-radius: 50%;
+}
+
+#d6 {
+    background-image: linear-gradient(to right, purple 50%, black 50%);
+    border-radius: 50%;
+}
+
+#d7 {
+    background-image: linear-gradient(to right, red 50%, white 50%);
+    border-radius: 50%;
+}
+
+#d8 {
+    background-image: linear-gradient(to right, black 50%, white 50%);
+    border-radius: 50%;
+}
