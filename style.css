@@ -19,15 +19,6 @@ main {
     margin: 5rem;
 }
 
-.hint {
-    position: fixed;
-    background-color: white;
-    padding: .5rem;
-    border-radius: .5rem;
-
-    top: 1rem;
-}
-
 .article {
     _border: 5px dashed blue;
     border-radius: 1rem;
@@ -36,26 +27,57 @@ main {
     overflow: hidden;
 }
 
+.picture {
+    _border: 5px dashed green;
+    max-width: 30rem;
+    max-height: 50rem;
+    position: relative;
+}
+
 img {
-    max-width: 27rem;
+    _border: 5px dashed rgb(109, 65, 8);
+    width: 100%;
+    _object-fit: none;
+}
+
+.hint {
+    position: absolute;
+    background-color: white;
+    padding: .5rem;
+    border-radius: .5rem;
+
+    top: 1rem;
+    right: 1rem;
+    opacity: .5;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
 }
 
 .description {
     margin: 1rem;
-}
+    line-height: 1.5;
+    }
 
 .order{
     margin: 1rem;
-    padding: 1rem;
+    padding-inline: 1rem;
+    padding-block-start: 1rem;
+    padding-block-end: 5rem;
     border-radius: 0.5rem;
     background-color: rgb(178, 199, 218);
-    display: inline-block;
+    display: block;
+
+    position: relative;
 }
 
 .prize {
     background-color: white;
     margin: .5rem;
-    padding: .75rem;
+    padding: .5rem 1.5rem;
 
     text-align: center;
 }
@@ -73,15 +95,19 @@ select {
 }
 
 button {
+    _border: 5px dashed red;
     background-color: blue;
     color: white;
-    width: 20rem;
+    /* width: 20rem; */
     border-radius: .5rem;
-    margin: .5rem;
+    margin: 1.5rem .5rem;
     
+    position: absolute;
+    left: 0.5rem;
+    right: .5rem;
     
     text-align: center;
-    padding: 1rem;
+    padding: .5rem 1.5rem;
 }
 
 .color {
