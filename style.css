@@ -3,6 +3,13 @@
     font-size: 16px;
 }
 
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/Quicksand-Medium.woff2);
+}
+
 html {
     font-family: Quicksand;
 }
@@ -16,7 +23,14 @@ body {
 main {
     /* border: 5px dashed red; */
     display: flex;
+    flex-direction: column;
     margin: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        flex-direction: row;
+    }
 }
 
 .article {
@@ -29,15 +43,14 @@ main {
 
 .picture {
     _border: 5px dashed green;
-    max-width: 30rem;
-    max-height: 50rem;
     position: relative;
 }
 
 img {
     _border: 5px dashed rgb(109, 65, 8);
     width: 100%;
-    _object-fit: none;
+    margin: 0;
+    _object-fit: cover;
 }
 
 .hint {
@@ -85,7 +98,35 @@ img {
 .size-quan {
     _border: 5px dashed green;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+
+}
+
+@media screen and (min-width: 768px) {
+    .size-quan {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 1190px) {
+    .size-quan {
+        flex-direction: row;
+    }
+}
+
+.size, .quan {
+    _border: 5px dashed blue;
+    display: flex;
+    flex-direction: row;
+
+    max-width: 100rem;
+}
+
+.text {
+    _border: 5px dashed darkcyan;
+    width: 100%;
+    max-width: 2000rem;
 }
 
 select {
