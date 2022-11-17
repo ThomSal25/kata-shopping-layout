@@ -24,7 +24,7 @@ main {
     /* border: 5px dashed red; */
     display: flex;
     flex-direction: column;
-    margin: 5rem;
+    margin: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -120,7 +120,14 @@ img {
     display: flex;
     flex-direction: row;
 
-    max-width: 100rem;
+    _width: 15rem;
+    margin-inline-end: 2rem;
+}
+
+@media screen and (min-width: 1190px) {
+    .size, .quan {
+        width: 10rem;
+    }
 }
 
 .text {
